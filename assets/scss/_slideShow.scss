@@ -5,11 +5,27 @@
           background-size:cover;
           background-repeat:no-repeat;
 }
+@mixin flex-slider() {
+          display: flex;
+          flex-flow: row nowrap;
+}
+@mixin font-set($weight,$size) {
+          font-weight:$weight;
+          font-size:$size *1px;
+          
+}
+.slide-show{
+          overflow: hidden;
+          @include flex-slider();
+          transition: all 0.2s linear;
+}
 .slide{
-          width: 100vw;
-          height: 90vh;
+          // width: 100vw;
+          // height: 95vh;
+          flex: 1 0 100vw;
           &:nth-child(1){
            @include bg_set(map-get($image-src,'header_images_slide1'));
+           
           }
           &:nth-child(2){
            @include bg_set(map-get($image-src,'header_images_slide2'));
@@ -22,13 +38,21 @@
           padding: 10% 0;
           color:map-get($color_pallets,'text-color');
           text-align: center;
+          font-family:sans-serif;
+          // font-size:36px;
 } 
 .slide-content>h1{
-          font-size:64px;
+          @include font-set(700,64);
 }  
 .button{
           border: 1px solid map-get($color_pallets,'text-color');
           padding:1%;
+}
+.next , .prev{
+          text-decoration: none;
+          color:map-get($color_pallets,'text-color');
+          @include font-set(700,25);
+          background-color:map-get($color_pallets,'next-button');
 }
 
 
