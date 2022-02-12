@@ -1,0 +1,34 @@
+@import "variables";
+// header_slideshow
+@mixin bg_set($bgImg){
+          background-image:$bgImg;
+          background-size:cover;
+          background-repeat:no-repeat;
+}
+.slide{
+          width: 100vw;
+          height: 90vh;
+          &:nth-child(1){
+           @include bg_set(map-get($image-src,'header_images_slide1'));
+          }
+          &:nth-child(2){
+           @include bg_set(map-get($image-src,'header_images_slide2'));
+          }
+          &:nth-child(3){
+           @include bg_set(map-get($image-src,'header_images_slide3'));
+          }
+}  
+.slide-content{
+          padding: 10% 0;
+          color:map-get($color_pallets,'text-color');
+          text-align: center;
+} 
+.slide-content>h1{
+          font-size:64px;
+}  
+.button{
+          border: 1px solid map-get($color_pallets,'text-color');
+          padding:1%;
+}
+
+

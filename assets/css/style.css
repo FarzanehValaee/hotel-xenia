@@ -1,4 +1,40 @@
 @import url("/assets/fonts/sans-serif");
+@import url("/assets/fonts/sans-serif");
+.slide {
+  width: 100vw;
+  height: 90vh;
+}
+.slide:nth-child(1) {
+  background-image: url("/assets/images/slider_n_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide:nth-child(2) {
+  background-image: url("/assets/images/slide_n_2_o.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide:nth-child(3) {
+  background-image: url("/assets/images/spa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-content {
+  padding: 10% 0;
+  color: #fff;
+  text-align: center;
+}
+
+.slide-content > h1 {
+  font-size: 64px;
+}
+
+.button {
+  border: 1px solid #fff;
+  padding: 1%;
+}
+
 .TopMenu {
   font-family: sans-serif;
 }
