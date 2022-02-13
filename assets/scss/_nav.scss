@@ -1,0 +1,43 @@
+@import "variables","mixin";
+.logo>img{
+          width:50%;
+}
+.headerNav{
+          width: 98.9%;
+          position: absolute; 
+          top: 1%;
+          padding:0.5%;
+          background-color: black;
+          opacity: 0.5;
+          display: flex;
+          justify-content: space-between;
+          color:map-get($color_pallets,'text-color');
+}
+ul{
+          display:flex;
+          justify-content: space-between;
+
+}
+li{
+
+          padding:2%;
+          list-style-type: none;
+          &>a{
+                    font-weight: 500;
+                    text-decoration: none;
+                    color:map-get($color_pallets,'text-color');
+          }
+}
+.toggler_and_tools{
+          display:flex;
+          justify-content: space-between;
+          &>span{
+            padding:21%;
+          }
+          &>button{
+           padding: 5%;
+           background-color:map-get($color_pallets,'ocher');
+           color:map-get($color_pallets,'text-color');
+           opacity: 1;
+          }
+}

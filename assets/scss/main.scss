@@ -1,4 +1,6 @@
-@import "variables","slideShow";
-.TopMenu{
+@import "variables","slideShow","nav";
+*{
+
+          box-sizing: border-box;
           font-family: map-get($font-family,'normal');
 }

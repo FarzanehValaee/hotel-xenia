@@ -1,27 +1,17 @@
-@import "variables";
+@import "variables","mixin";
+
 // header_slideshow
-@mixin bg_set($bgImg){
-          background-image:$bgImg;
-          background-size:cover;
-          background-repeat:no-repeat;
-}
-@mixin flex-slider() {
-          display: flex;
-          flex-flow: row nowrap;
-}
-@mixin font-set($weight,$size) {
-          font-weight:$weight;
-          font-size:$size *1px;
-          
+.slidePart{
+          overflow: hidden;
+          max-width: 100%;
 }
 .slide-show{
-          overflow: hidden;
+          width:100vw;
+          height: 93vh;
           @include flex-slider();
           transition: all 0.2s linear;
 }
 .slide{
-          // width: 100vw;
-          // height: 95vh;
           flex: 1 0 100vw;
           &:nth-child(1){
            @include bg_set(map-get($image-src,'header_images_slide1'));
@@ -51,8 +41,22 @@
 .next , .prev{
           text-decoration: none;
           color:map-get($color_pallets,'text-color');
-          @include font-set(700,25);
+          padding:5% 1%;
+          opacity: 0.1;
+          @include font-set(1000,25);
           background-color:map-get($color_pallets,'next-button');
+          position:absolute;
+          top:30%;
+          // align-items: flex-start;
+}
+.next{
+          left:97%;
+          // align-items: flex-end; 
+}
+.nextPrevButton{
+          display:flex;
+          // justify-content: space-between;
+          // background-color: #fff;
 }
 
-
+//bottom slider 

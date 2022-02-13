@@ -1,7 +1,14 @@
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
-.slide-show {
+@import url("/assets/fonts/sans-serif");
+.slidePart {
   overflow: hidden;
+  max-width: 100%;
+}
+
+.slide-show {
+  width: 100vw;
+  height: 93vh;
   display: flex;
   flex-flow: row nowrap;
   transition: all 0.2s linear;
@@ -46,12 +53,70 @@
 .next, .prev {
   text-decoration: none;
   color: #fff;
-  font-weight: 700;
+  padding: 5% 1%;
+  opacity: 0.1;
+  font-weight: 1000;
   font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 30%;
 }
 
-.TopMenu {
+.next {
+  left: 97%;
+}
+
+.nextPrevButton {
+  display: flex;
+}
+
+.logo > img {
+  width: 50%;
+}
+
+.headerNav {
+  width: 98.9%;
+  position: absolute;
+  top: 1%;
+  padding: 0.5%;
+  background-color: black;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  padding: 2%;
+  list-style-type: none;
+}
+li > a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggler_and_tools {
+  display: flex;
+  justify-content: space-between;
+}
+.toggler_and_tools > span {
+  padding: 21%;
+}
+.toggler_and_tools > button {
+  padding: 5%;
+  background-color: #c5bc58;
+  color: #fff;
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 

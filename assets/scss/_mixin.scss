@@ -1,0 +1,19 @@
+@mixin volume($p,$m){
+          padding:$p *1px;
+          margin:$m *1px;
+}
+@mixin bg_set($bgImg){
+          background-image:$bgImg;
+          background-size:cover;
+          background-repeat:no-repeat;
+          
+}
+@mixin flex-slider() {
+          display: flex;
+          flex-flow: row nowrap;
+}
+@mixin font-set($weight,$size) {
+          font-weight:$weight;
+          font-size:$size *1px;
+          
+}
