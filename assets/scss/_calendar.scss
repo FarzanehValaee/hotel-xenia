@@ -1,0 +1,33 @@
+@import "variables","mixin";
+
+.calendar{
+          width:70vw;
+          background-color: map-get($color_pallets,'calendar_bg');
+          color:map-get($color_pallets,'text-color');
+          justify-self:center;
+          padding:1%;
+          position: absolute;
+          left:15%;
+          top:92%;
+}
+.calendarContent{
+          padding:0 25%;
+          margin-bottom:3%;
+}
+
+.title,.dateInput,.RequestButton{
+          display:flex;
+          justify-content: space-around;
+
+}
+button{
+          padding: 1.5%;
+          justify-self:center;
+          background-color: map-get($color_pallets,'calendar_bg');
+          color:map-get($color_pallets,'success');
+          border-color:map-get($color_pallets,'success');
+          
+}
+input{
+          padding:8%;
+}

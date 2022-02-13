@@ -1,6 +1,7 @@
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
+@import url("/assets/fonts/sans-serif");
 .slidePart {
   overflow: hidden;
   max-width: 100%;
@@ -113,6 +114,39 @@ li > a {
   background-color: #c5bc58;
   color: #fff;
   opacity: 1;
+}
+
+.calendar {
+  width: 70vw;
+  background-color: #111118;
+  color: #fff;
+  justify-self: center;
+  padding: 1%;
+  position: absolute;
+  left: 15%;
+  top: 92%;
+}
+
+.calendarContent {
+  padding: 0 25%;
+  margin-bottom: 3%;
+}
+
+.title, .dateInput, .RequestButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 1.5%;
+  justify-self: center;
+  background-color: #111118;
+  color: #1bd760;
+  border-color: #1bd760;
+}
+
+input {
+  padding: 8%;
 }
 
 * {
