@@ -3,6 +3,7 @@
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
+@import url("/assets/fonts/sans-serif");
 .slidePart {
   overflow: hidden;
   max-width: 100%;
@@ -195,8 +196,62 @@ input {
   text-align: center;
 }
 
+figure {
+  margin-bottom: 15%;
+}
 figure > img {
   border-radius: 50%;
+}
+
+.HotelParts {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: space-between;
+}
+.HotelParts > div {
+  width: 24%;
+  height: 75%;
+  background-color: pink;
+  margin: 0 1%;
+  object-fit: cover;
+}
+.HotelParts > div > div {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.HotelParts > div > div > span {
+  margin: 10%;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 600;
+}
+.HotelParts > div:nth-child(1) {
+  background-image: url("/assets/images/spa-banner.jpg");
+}
+.HotelParts > div:nth-child(2) {
+  background-image: url("/assets/images/gym-banner.jpg");
+}
+.HotelParts > div:nth-child(3) {
+  background-image: url("/assets/images/restaurant-banner.jpg");
+}
+
+.OffOffer {
+  height: 60vh;
+  object-fit: cover;
+  background-image: url("/assets/images/home-banner-1.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.OffOffer > h2 {
+  font-weight: 700;
+  font-size: xx-large;
 }
 
 * {

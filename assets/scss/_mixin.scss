@@ -17,9 +17,9 @@
           font-size:$size *1px;
           
 }
-@mixin centerItems{
+@mixin centerItems($direction){
           display: flex;
           align-items: center;
           justify-content: center;
-          flex-direction: column;
+          flex-direction: $direction;
 }

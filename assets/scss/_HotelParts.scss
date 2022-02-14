@@ -1,0 +1,46 @@
+@import "variables","mixin";
+.HotelParts{
+          height:100vh;
+          // border:1px solid red;
+          margin:0 auto;
+          @include centerItems(row);
+          align-items: space-between;
+          &>div{
+                    width:24%;
+                    height:75%;
+                    background-color: pink;
+                    margin: 0 1%;
+                    object-fit: cover;
+                    &>div{
+                              display:flex;
+                              align-items:flex-end;
+                              height:100%;
+                              &>span{
+                                        margin:10%;
+                                        color:map-get($color_pallets,'text-color');
+                                        font-size:x-large;
+                                        font-weight: 600;
+                              }
+                    }
+
+          }
+          &>div:nth-child(1){
+                    background-image:map-get($image-src,'banner_SpaSalon');
+          }
+          &>div:nth-child(2){
+                 background-image:map-get($image-src,'banner_Gym');
+          }
+          &>div:nth-child(3){
+                 background-image:map-get($image-src,'banner_restaurent');
+          }
+}
+.OffOffer{
+          height:60vh;
+          object-fit: cover;
+          background-image:map-get($image-src,'offOffer');
+          @include centerItems(column);
+          &>h2{
+                    font-weight: 700;
+                    font-size:xx-large;
+          }
+}
