@@ -1,6 +1,6 @@
 @import url('/assets/fonts/sans-serif');
 $color_pallets:(
-          success:  #1bd760,
+          success:  #6fb586,
           danger:    #ff5600,
           warning: #f90,
           ocher:#c5bc58,
@@ -10,7 +10,8 @@ $color_pallets:(
           new-color:#d9534f,
           text-color:#fff,
           next-button:rgba(0,0,0,0.5),
-          calendar_bg:#111118
+          calendar_bg:#111118,
+          calendar_input_bg:#1F1F2C
           
 );
 $font-family:(

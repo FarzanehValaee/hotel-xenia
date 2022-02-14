@@ -17,3 +17,9 @@
           font-size:$size *1px;
           
 }
+@mixin centerItems{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+}

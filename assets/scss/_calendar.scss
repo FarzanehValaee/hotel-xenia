@@ -13,14 +13,18 @@
 .calendarContent{
           padding:0 25%;
           margin-bottom:3%;
+          border:none;
 }
 
+input{
+          background-color: map-get($color_pallets,'calendar_input_bg');     
+}
 .title,.dateInput,.RequestButton{
           display:flex;
           justify-content: space-around;
 
 }
-button{
+.RequestButton>button{
           padding: 1.5%;
           justify-self:center;
           background-color: map-get($color_pallets,'calendar_bg');

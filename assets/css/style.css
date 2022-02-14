@@ -2,6 +2,7 @@
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
 @import url("/assets/fonts/sans-serif");
+@import url("/assets/fonts/sans-serif");
 .slidePart {
   overflow: hidden;
   max-width: 100%;
@@ -130,6 +131,11 @@ li > a {
 .calendarContent {
   padding: 0 25%;
   margin-bottom: 3%;
+  border: none;
+}
+
+input {
+  background-color: #1F1F2C;
 }
 
 .title, .dateInput, .RequestButton {
@@ -137,16 +143,60 @@ li > a {
   justify-content: space-around;
 }
 
-button {
+.RequestButton > button {
   padding: 1.5%;
   justify-self: center;
   background-color: #111118;
-  color: #1bd760;
-  border-color: #1bd760;
+  color: #6fb586;
+  border-color: #6fb586;
 }
 
 input {
   padding: 8%;
+}
+
+.abouthotel {
+  margin-top: 20%;
+}
+
+.welcomTitle > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% 0;
+  position: relative;
+  font-size: 140px;
+  opacity: 0.1;
+  line-height: 1;
+}
+
+.welcomContent {
+  text-align: center;
+  position: absolute;
+  left: 35%;
+  top: 143%;
+}
+
+.welcomContent > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 0.1;
+}
+
+.avatarDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.avatarDescription:nth-child(2) {
+  margin: 0 30%;
+  text-align: center;
+}
+
+figure > img {
+  border-radius: 50%;
 }
 
 * {
