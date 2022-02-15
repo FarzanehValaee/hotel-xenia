@@ -1,13 +1,11 @@
 @import "variables","mixin";
 .HotelParts{
-          height:100vh;
           // border:1px solid red;
-          margin:0 auto;
           @include centerItems(row);
           align-items: space-between;
           &>div{
                     width:24%;
-                    height:75%;
+                    height:75vh;
                     background-color: pink;
                     margin: 0 1%;
                     object-fit: cover;

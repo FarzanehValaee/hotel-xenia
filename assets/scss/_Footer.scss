@@ -1,0 +1,40 @@
+@import "variables","mixin";
+footer{
+          padding:2%;
+          height:50vh;
+          background-color: black;
+          color:map-get($color_pallets,'text-color');
+          &>.fh{
+            @include centerItems(column);  
+          }
+
+
+}
+footer span,footer li{
+          font-size:x-small;
+          font-weight:50;
+}
+li{
+          list-style-type: none;
+          &:hover{
+                    color:map-get($color_pallets,'success');
+          }
+}
+.ff{
+          @include centerItems(row);
+          justify-content: space-between;
+          margin: 10% 0;
+          &>img{
+                    width:8%;
+          }
+}
+.FooterLogo>img{
+          width:60%;
+          margin: 5%;
+}
+.conectionWay>span{
+          justify-content: space-around;
+}
+
+
+

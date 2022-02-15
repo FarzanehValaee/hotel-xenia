@@ -1,0 +1,8 @@
+@import "variables","mixin";
+.Testimonials{
+          padding:10%;
+          border:1px solid green;
+          height:50vh;
+          @include centerItems(column);
+
+}
