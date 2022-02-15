@@ -2,7 +2,10 @@
         "aboutHotel","HotelParts","Rooms"
         ,"Testimonilas","Footer";
 *{
-
           box-sizing: border-box;
           font-family: map-get($font-family,'normal');
+}
+body{
+          margin: 0;
+          padding: 0;
 }

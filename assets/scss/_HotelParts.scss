@@ -1,8 +1,7 @@
 @import "variables","mixin";
 .HotelParts{
-          // border:1px solid red;
           @include centerItems(row);
-          align-items: space-between;
+          justify-content: center;
           &>div{
                     width:24%;
                     height:75vh;

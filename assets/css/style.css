@@ -207,7 +207,7 @@ figure > img {
   display: flex;
   align-items: center;
   flex-direction: row;
-  align-items: space-between;
+  justify-content: center;
 }
 .HotelParts > div {
   width: 24%;
@@ -257,7 +257,6 @@ figure > img {
 
 .Testimonials {
   padding: 10%;
-  border: 1px solid green;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -311,6 +310,11 @@ li:hover {
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
