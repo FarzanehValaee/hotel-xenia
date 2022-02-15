@@ -41,3 +41,6 @@
                     font-size:xx-large;
           }
 }
+.OffOffer>span{
+       @include button(black);
+}

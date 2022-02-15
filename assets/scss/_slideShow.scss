@@ -35,8 +35,7 @@
           @include font-set(700,64);
 }  
 .button{
-          border: 1px solid map-get($color_pallets,'text-color');
-          padding:1%;
+          @include button(text-color);
 }
 .next , .prev{
           text-decoration: none;

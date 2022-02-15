@@ -24,13 +24,10 @@ input{
           justify-content: space-around;
 
 }
-.RequestButton>button{
+.RequestButton>span{
           padding: 1.5%;
           justify-self:center;
-          background-color: map-get($color_pallets,'calendar_bg');
-          color:map-get($color_pallets,'success');
-          border-color:map-get($color_pallets,'success');
-          
+          @include button(success);          
 }
 input{
           padding:8%;

@@ -53,6 +53,7 @@
 .button {
   border: 1px solid #fff;
   padding: 1%;
+  color: #fff;
 }
 
 .next, .prev {
@@ -80,9 +81,9 @@
 }
 
 .headerNav {
-  width: 98.9%;
+  width: 100%;
   position: absolute;
-  top: 1%;
+  top: 0;
   padding: 0.5%;
   background-color: black;
   opacity: 0.5;
@@ -146,12 +147,12 @@ input {
   justify-content: space-around;
 }
 
-.RequestButton > button {
+.RequestButton > span {
   padding: 1.5%;
   justify-self: center;
-  background-color: #111118;
+  border: 1px solid #6fb586;
+  padding: 1%;
   color: #6fb586;
-  border-color: #6fb586;
 }
 
 input {
@@ -248,6 +249,11 @@ figure > img {
 .OffOffer > h2 {
   font-weight: 700;
   font-size: xx-large;
+}
+
+.OffOffer > span {
+  border: 1px solid;
+  padding: 1%;
 }
 
 .Rooms {
