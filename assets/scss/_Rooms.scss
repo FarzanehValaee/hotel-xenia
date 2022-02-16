@@ -1,8 +1,8 @@
 @import "variables","mixin";
 .Rooms{
-          @include centerItems(row);
+          @include centerItems(column);
           align-items:center;
-          height:100vh;
+          // height:100vh;
           background-color:black;
           color:map-get($color_pallets,'text-color');
 
@@ -15,10 +15,12 @@
 }
 .Mainslider1{
           @include flex-slider();
-          
+          padding: 10%;
 }
 .Mslide{
-          flex: 1 0 100vw;
+          flex: 1 0 80vw;
+          // margin-left: 10%;
+          margin-right: 20%;
           background-color:#171720;
           display: flex;
           &>.slideImg{
@@ -51,4 +53,28 @@
           &:nth-child(4)>.slideImg{
                     @include bg_set(map-get($image-src,'Mainslider1_4'));
           }
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+}
+@include fadeAnimation;
+.DotBottun{
+          width:10vh;
+          @include centerItems(row);
+          justify-content: space-around;
+          margin-bottom: 3%;
+          text-align: center;
+          &>.dot{
+           cursor: pointer;
+           width: 12%;
+           height: 12%;
+           background-color: #fff;
+           border-radius:50%;
+           transition:background-color 0.6s ease;
+           padding: 5%;
+          }
+}
+.active , .dot:hover{
+          background-color: #717171;
 }
