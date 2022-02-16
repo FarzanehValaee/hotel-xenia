@@ -1,5 +1,54 @@
 @import "variables","mixin";
 .Rooms{
+          @include centerItems(row);
+          align-items:center;
           height:100vh;
           background-color:black;
+          color:map-get($color_pallets,'text-color');
+
+}
+.Rooms a{
+          text-decoration: none;
+          color:map-get($color_pallets,'success');
+          font-weight: 100;
+          font-size:x-small;
+}
+.Mainslider1{
+          @include flex-slider();
+          
+}
+.Mslide{
+          flex: 1 0 100vw;
+          background-color:#171720;
+          display: flex;
+          &>.slideImg{
+                    width:50%;
+                    height: 50vh;
+                    background-color: rebeccapurple;
+                    object-fit: contain;
+          }
+          &>.captionMslide{
+                    display: flex;
+                    flex-direction: column;
+                    align-items:space-around;
+                    width:50%;
+                    padding:2%;
+                    &>p{
+                              font-weight: 100;
+                              font-size:small;
+                    }
+
+          }
+          &:nth-child(1)>.slideImg{
+                    @include bg_set(map-get($image-src,'Mainslider1_1'));
+          }
+          &:nth-child(2)>.slideImg{
+                    @include bg_set(map-get($image-src,'Mainslider1_2'));
+          }
+          &:nth-child(3)>.slideImg{
+                    @include bg_set(map-get($image-src,'Mainslider1_3'));
+          }
+          &:nth-child(4)>.slideImg{
+                    @include bg_set(map-get($image-src,'Mainslider1_4'));
+          }
 }
