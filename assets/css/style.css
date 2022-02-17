@@ -273,14 +273,10 @@ figure > img {
 }
 
 .Mainslider1 {
-  display: flex;
-  flex-flow: row nowrap;
   padding: 10%;
 }
 
 .Mslide {
-  flex: 1 0 80vw;
-  margin-right: 20%;
   background-color: #171720;
   display: flex;
   -webkit-animation-name: fade;
@@ -378,10 +374,6 @@ figure > img {
   background-color: #869791;
 }
 
-.Mainslider2 {
-  display: flex;
-  flex-flow: row nowrap;
-}
 .Mainslider2 > .Mslider2 {
   display: flex;
   align-items: center;

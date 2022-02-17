@@ -14,7 +14,7 @@
 }
 .Mainslider2{
           // @include centerItems(column);
-          @include flex-slider();
+          // @include flex-slider();
           &>.Mslider2{
                     @include centerItems(row);
                     justify-content: center;

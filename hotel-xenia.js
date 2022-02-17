@@ -1,38 +1,3 @@
-// let slideIndex=1;
-// showSlides(slideIndex)
-// function plusSlides(n) {
-//           showSlides(slideIndex+n);
-// }
-// function currentslide(n) {
-//           showSlides(slideIndex=n);
-// }
-
-// function showSlides(n) {
-//      let slides=$('.slide')
-// //      console.log(typeof slides)//object
-//      switch (n) {
-//                case n>slides.length:
-//                          slideIndex=1;
-//                          break;
-//                case n<1:
-//                          slideIndex=slides.length;
-//                          break;
-     
-//                default:
-//                     $.each(slides, function(key) {
-//                               let name="."+this.className.split(' ')[1]
-//                               console.log(name);
-//                               console.log("/");
-//                               $(`${name}`).hide();
-//                               console.log(name);
-//                     });
-//                     slides[slideIndex-1].style.display="block";
-//                     console.log(slides[slideIndex-1])
-//                     // slides[slideIndex-1].className('active');
-//                     //      break;
-//      }
-// }
-
 // ______________________________________
 $(function () {
           let sliderIndex = 0;
