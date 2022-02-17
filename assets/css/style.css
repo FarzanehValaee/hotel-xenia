@@ -55,7 +55,6 @@
   padding: 1%;
   color: #fff;
 }
-
 .next, .prev {
   text-decoration: none;
   color: #fff;
@@ -119,6 +118,24 @@ li > a {
   background-color: #c5bc58;
   color: #fff;
   opacity: 1;
+}
+.toggler_and_tools > button:hover {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: yellow;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 .calendar {
@@ -216,6 +233,7 @@ figure > img {
   background-color: pink;
   margin: 0 1%;
   object-fit: cover;
+  overflow: hidden;
 }
 .HotelParts > div > div {
   display: flex;
@@ -227,6 +245,12 @@ figure > img {
   color: #fff;
   font-size: x-large;
   font-weight: 600;
+}
+.HotelParts > div:hover > .hid-box {
+  top: 0;
+}
+.HotelParts > div:hover > div:nth-child(1) {
+  display: none;
 }
 .HotelParts > div:nth-child(1) {
   background-image: url("/assets/images/spa-banner.jpg");
@@ -254,6 +278,17 @@ figure > img {
 .OffOffer > span {
   border: 1px solid;
   padding: 1%;
+}
+
+.hid-box {
+  top: 100%;
+  position: relative;
+  transition: all 0.3s ease-out;
+  background: black;
+  opacity: 0.5;
+  color: white;
+  height: 100%;
+  padding: 2%;
 }
 
 .Rooms {
@@ -362,7 +397,7 @@ figure > img {
 }
 
 .Testimonials {
-  padding: 10%;
+  padding: 2%;
   display: flex;
   align-items: center;
   flex-direction: column;

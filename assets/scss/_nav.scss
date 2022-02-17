@@ -39,5 +39,8 @@ li{
            background-color:map-get($color_pallets,'ocher');
            color:map-get($color_pallets,'text-color');
            opacity: 1;
+           &:hover{
+             @include buttonAnimation(yellow);
+           }
           }
 }

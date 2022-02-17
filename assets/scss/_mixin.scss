@@ -13,6 +13,25 @@
           padding:1%;
           color:map-get($color_pallets,$color);
 }
+@mixin buttonAnimation($bg-color){
+          // position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: $bg-color;
+          -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+          -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
 @mixin flex-slider{
           display: flex;
           flex-flow: row nowrap;

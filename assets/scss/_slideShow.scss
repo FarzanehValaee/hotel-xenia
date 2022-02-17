@@ -36,6 +36,8 @@
 }  
 .button{
           @include button(text-color);
+          &:hover{
+          }
 }
 .next , .prev{
           text-decoration: none;

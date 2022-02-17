@@ -1,6 +1,6 @@
 @import "variables","mixin";
 .Testimonials{
-          padding:10%;
+          padding:2%;
           @include centerItems(column);
           &>.DotBottun{
                     &>.dot2{
