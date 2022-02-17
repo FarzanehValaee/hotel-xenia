@@ -54,10 +54,11 @@
 .hid-box {
        top: 100%;
        position: relative;
-       transition: all .3s ease-out;
-       background:black;
-       opacity: 0.5;
+       transition: all .4s ease-out;
+       background:map-get($color_pallets,'bg_opacity');
+       // opacity: 0.5;
        color: white;
        height: 100%;
-       padding: 2%;
+       padding: 4%;
+
 }

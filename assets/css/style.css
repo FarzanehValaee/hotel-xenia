@@ -84,20 +84,17 @@
   position: absolute;
   top: 0;
   padding: 0.5%;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
   color: #fff;
-}
-
-ul {
-  display: flex;
-  justify-content: space-between;
+  font-weight: 100;
+  font-size: small;
 }
 
 li {
-  padding: 2%;
+  display: inline-block;
+  margin: 2% 15px;
   list-style-type: none;
 }
 li > a {
@@ -107,35 +104,12 @@ li > a {
 }
 
 .toggler_and_tools {
-  display: flex;
-  justify-content: space-between;
+  margin: 2%;
 }
-.toggler_and_tools > span {
-  padding: 21%;
-}
-.toggler_and_tools > button {
-  padding: 5%;
+.toggler_and_tools > .toggler_button {
+  padding: 10px;
   background-color: #c5bc58;
   color: #fff;
-  opacity: 1;
-}
-.toggler_and_tools > button:hover {
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: yellow;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
 
 .calendar {
@@ -283,12 +257,11 @@ figure > img {
 .hid-box {
   top: 100%;
   position: relative;
-  transition: all 0.3s ease-out;
-  background: black;
-  opacity: 0.5;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   height: 100%;
-  padding: 2%;
+  padding: 4%;
 }
 
 .Rooms {
