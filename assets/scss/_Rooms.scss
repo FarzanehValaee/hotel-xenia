@@ -61,13 +61,7 @@
           margin-bottom: 3%;
           text-align: center;
           &>.dot{
-           cursor: pointer;
-           width: 12%;
-           height: 12%;
-           background-color: #fff;
-           border-radius:50%;
-           transition:background-color 0.6s ease;
-           padding: 5%;
+            @include Dots;
           }
 }
 

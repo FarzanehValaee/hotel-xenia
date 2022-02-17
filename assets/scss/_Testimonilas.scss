@@ -3,7 +3,8 @@
           padding:10%;
           @include centerItems(column);
           &>.DotBottun{
-                    &>.dot{
+                    &>.dot2{
+                              @include Dots;
                               background-color: #d6d6d6;
                               &:hover{
                                         background-color: #869791;
@@ -22,5 +23,6 @@
                     padding:0 20%;
                     flex:1 0 100vw;
           }
+
 }
 
