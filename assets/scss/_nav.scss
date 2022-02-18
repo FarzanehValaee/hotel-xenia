@@ -15,8 +15,10 @@
           font-size: small;
           overflow: auto;
 }
-ul{
-          // display: none;
+header ul{
+      @include responsive(laptop){
+        display: none;
+      }
           // display:flex;
           // justify-content: space-between;
 
@@ -53,8 +55,6 @@ li{
           }
 }
 .toggler_and_tools{
-          // display:flex;
-          // justify-content: space-around;
           cursor: pointer;
            margin:2%;
           &>.toggler_button{

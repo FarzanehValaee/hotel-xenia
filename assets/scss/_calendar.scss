@@ -22,11 +22,14 @@ input{
 .title,.dateInput,.RequestButton{
           display:flex;
           justify-content: space-around;
-
+          @include responsive(tablet){
+                    flex-direction: column;
+          }
 }
 .RequestButton>span{
           padding: 1.5%;
           justify-self:center;
+          text-align: center;
           @include button(success); 
           @include buttonAnimation(map-get($color_pallets,'non_bg'),map-get($color_pallets,'succes'),map-get($color_pallets,'non_bg'));
          

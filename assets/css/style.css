@@ -103,6 +103,12 @@
   overflow: auto;
 }
 
+@media (max-width: 1024px) {
+  header ul {
+    display: none;
+  }
+}
+
 li {
   display: inline-block;
   margin: 2% 15px;
@@ -177,10 +183,16 @@ input {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 900px) {
+  .title, .dateInput, .RequestButton {
+    flex-direction: column;
+  }
+}
 
 .RequestButton > span {
   padding: 1.5%;
   justify-self: center;
+  text-align: center;
   border: 1px solid #6fb586;
   padding: 1%;
   color: #6fb586;
@@ -249,6 +261,13 @@ figure > img {
   align-items: center;
   flex-direction: row;
   justify-content: center;
+}
+@media (max-width: 900px) {
+  .HotelParts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .HotelParts > div {
   width: 24%;
@@ -490,6 +509,14 @@ li:hover {
 }
 .ff > img {
   width: 8%;
+}
+@media (max-width: 900px) {
+  .ff {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .FooterLogo > img {

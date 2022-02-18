@@ -2,6 +2,9 @@
 .HotelParts{
           @include centerItems(row);
           justify-content: center;
+          @include responsive(tablet){
+              @include centerItems(column);
+          }
           &>div{
                     width:24%;
                     height:75vh;
