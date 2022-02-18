@@ -27,7 +27,9 @@ input{
 .RequestButton>span{
           padding: 1.5%;
           justify-self:center;
-          @include button(success);          
+          @include button(success); 
+          @include buttonAnimation(map-get($color_pallets,'non_bg'),map-get($color_pallets,'succes'),map-get($color_pallets,'non_bg'));
+         
 }
 input{
           padding:8%;

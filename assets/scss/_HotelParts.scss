@@ -50,6 +50,7 @@
 }
 .OffOffer>span{
        @include button(black);
+       @include buttonAnimation(map-get($color_pallets,'non_bg'),white,black);
 }
 .hid-box {
        top: 100%;

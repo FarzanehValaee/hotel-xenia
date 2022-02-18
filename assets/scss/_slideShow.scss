@@ -36,8 +36,7 @@
 }  
 .button{
           @include button(text-color);
-          &:hover{
-          }
+          @include buttonAnimation(map-get($color_pallets,'non_bg'),map-get($color_pallets,'calendar_bg'),map-get($color_pallets,'non_bg'));
 }
 .next , .prev{
           text-decoration: none;
