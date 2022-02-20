@@ -23,17 +23,17 @@
   flex: 1 0 100vw;
 }
 .slide:nth-child(1) {
-  background-image: url("./assets/images/slider_n_1.jpg");
+  background-image: url("/assets/images/slider_n_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide:nth-child(2) {
-  background-image: url("./assets/images/slide_n_2_o.jpg");
+  background-image: url("/assets/images/slide_n_2_o.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide:nth-child(3) {
-  background-image: url("./assets/images/spa.jpg");
+  background-image: url("/assets/images/spa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -295,19 +295,19 @@ figure > img {
   display: none;
 }
 .HotelParts > div:nth-child(1) {
-  background-image: url("./assets/images/spa-banner.jpg");
+  background-image: url("/assets/images/spa-banner.jpg");
 }
 .HotelParts > div:nth-child(2) {
-  background-image: url("./assets/images/gym-banner.jpg");
+  background-image: url("/assets/images/gym-banner.jpg");
 }
 .HotelParts > div:nth-child(3) {
-  background-image: url("./assets/images/restaurant-banner.jpg");
+  background-image: url("/assets/images/restaurant-banner.jpg");
 }
 
 .OffOffer {
   height: 60vh;
   object-fit: cover;
-  background-image: url("./assets/images/home-banner-1.jpg");
+  background-image: url("/assets/images/home-banner-1.jpg");
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -387,22 +387,22 @@ figure > img {
   font-size: small;
 }
 .Mslide:nth-child(1) > .slideImg {
-  background-image: url("./assets/images/room_1_n_1-1024x683.jpg");
+  background-image: url("/assets/images/room_1_n_1-1024x683.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Mslide:nth-child(2) > .slideImg {
-  background-image: url("./assets/images/room-1.jpg");
+  background-image: url("/assets/images/room-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Mslide:nth-child(3) > .slideImg {
-  background-image: url("./assets/images/room-2.jpg");
+  background-image: url("/assets/images/room-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Mslide:nth-child(4) > .slideImg {
-  background-image: url("./assets/images/room-3.jpg");
+  background-image: url("/assets/images/room-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
